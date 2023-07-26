@@ -1,0 +1,55 @@
+{
+	"name": "nodeapi",
+	"type": "module",
+	"main": "src/index.js",
+	"author": "IDScript",
+	"license": "MIT",
+	"version": "0.1.0",
+	"description": "Restful API by IDScript",
+	"keywords": [],
+	"homepage": "https://github.com/IDScript/nodeapi#readme",
+	"bugs": {
+		"url": "https://github.com/IDScript/nodeapi/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IDScript/nodeapi.git"
+	},
+	"scripts": {
+		"test": "jest -i",
+		"dev": "nodemon index.js",
+		"fc": " prettier --write . && eslint --fix . && prettier --check . && eslint ."
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.[t|j]sx?$": "babel-jest"
+		}
+	},
+	"prisma": {
+		"seed": "node src/database/seed/seeder.js",
+		"schema": "src/database/schema.prisma"
+	},
+	"dependencies": {
+		"bcrypt": "^5.1.0",
+		"express": "^4.18.2",
+		"uuid": "^9.0.0",
+		"winston": "^3.10.0"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.22.9",
+		"@types/bcrypt": "^5.0.0",
+		"@types/express": "^4.17.17",
+		"@types/jest": "^29.5.3",
+		"@types/supertest": "^2.0.12",
+		"@types/uuid": "^9.0.2",
+		"babel-jest": "^29.6.1",
+		"eslint": "^8.45.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-prettier": "^5.0.0",
+		"jest": "^29.6.1",
+		"prettier": "^3.0.0",
+		"prisma": "^5.0.0",
+		"supertest": "^6.3.3"
+	}
+}
