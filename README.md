@@ -5,9 +5,9 @@
 ## Installation
 
 ```bash
- npm install express winston bcrypt uuid dotenv
+ pnpm add express winston bcrypt uuid dotenv
 ```
 
 ```bash
- pnpm install --save-dev @types/express prisma @types/bcrypt @types/uuid jest @types/jest babel-jest @babel/preset-env supertest @types/supertest prettier eslint-plugin-prettier eslint eslint-plugin-import eslint-config-prettier
+ pnpm add -D @types/express prisma @types/bcrypt @types/uuid jest @types/jest babel-jest @babel/preset-env supertest @types/supertest prettier eslint-plugin-prettier eslint eslint-plugin-import eslint-config-prettier globals
 ```
